@@ -52,7 +52,7 @@ export function AiOutput({ content, loading, emptyHint }: AiOutputProps) {
             <Copy className="h-4 w-4 mr-1" /> Copy
           </Button>
         </div>
-        <article className="prose prose-sm dark:prose-invert max-w-none prose-headings:font-semibold prose-table:text-sm">
+        <article className="markdown-body text-sm leading-relaxed text-foreground">
           <ReactMarkdown>{content}</ReactMarkdown>
         </article>
       </CardContent>
